@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = 'Ibrahim Rasel'
+	email = 'md.ibrahim.rasel@gmail.com'
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[alias]
+	s = status -s
+	lg = log --oneline --all --graph --decorate

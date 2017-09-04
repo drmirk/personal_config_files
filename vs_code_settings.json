@@ -1,0 +1,27 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.formatOnType": true,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.venvPath": "/home/ibrahim/anaconda3/envs",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "workbench.statusBar.visible": true,
+    "git.enableSmartCommit": true,
+    "window.zoomLevel": 0,
+    "typescript.check.npmIsInstalled": false,
+    "workbench.colorTheme": "Seti Monokai"
+  }

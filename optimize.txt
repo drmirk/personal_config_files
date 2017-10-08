@@ -1,0 +1,51 @@
+1. edit fstab
+	1. disable last access time file and directory
+		- noatime (fully disables writing file access times to the drive every time you read a file)
+		- nodiratime (noatime implies nodiratime, no need to specify both)
+	2. enable trim (for ssd)
+	3. tune swappiness (start swap after using all ram)
+		$ free
+		$ cat /proc/sys/vm/swappiness
+		$ gedit /etc/sysctl.conf
+			#SET SWAPPINESS
+			vm.swappiness = 0
+	4. move tmpfs to ram (log files, if i dont care after each reboot, temporary files etc. I/O intensive tasks and programs that run frequent read/write operations can benefit from using a tmpfs folder, exp: firefox profile). By default, a tmpfs partition has its maximum size set to half RAM, to prevent abuse use custom value
+		$ df -h
+		$ vi /etc/fstab
+			tmpfs	/tmp	tmpfs	rw,nodev,nosuid,noatime,size=512M	0	0 (mode=777t)
+			tmpfs	/var/spool	tmpfs	defaults,noatime,size=512M,mode=1277	0	0 (mode=755)
+			tmpfs	/var/log	tmpfs	defaults,noatime,size=512M,mode=0755	0	0 (be sure) (mode=775)
+			*tmpfs	/var/tmp	tmpfs	defaults,noatime,size=512M,mode=1277	0	0 (be sure) (mode=777t)
+			*tmpfs	/var/lock	tmpfs	defaults,noatime,size=512M,mode=0755	0	0 (mode=777)
+			*tmpfs	/var/run	tmpfs	defaults,noatime,size=512M,mode=0755	0	0 (mode=777)
+			tmpfs	/home/ibrahim/.cache	tmpfs	defaults,noatime,size=512M	0	0 (mode=700)
+		$ findmnt --target /tmp
+2. sudo powertop
+3. tlp
+4. cpufrequency
+	indicator-cpufreq
+5. fan control
+	$ cat /proc/acpi/ibm/fan
+	$ cat /sys/devices/virtaul/thermal_zone0/temp
+6. graphics card
+	1. disable bios
+	2. vgaswitcheroo
+	3. $ cat /etc/rc.local
+		$ echo 'OFF' > /sys/kernel/debug/vgaswitcheroo/switch
+		$ cat /sys/kernel/debug/vgaswitcheroo/switch
+			------> DIS:OFF
+					IGD:PWR
+7. apt install E4rat (preload application designed for the ext4, monitors files opened during boot, optimizes their placement on the partition to improve access time, and preloads them at the very beginning of the boot process)
+	- not for SSD
+8. use swap on video ram (increases swap size but reduces power)
+9. profile-sync-daemon
+	$ psd
+	$ vi /home/ibrahim/.config/psd/psd.conf
+		USE_OVERLAYFS="yes"
+		USE_BACKUPS="yes"
+		BACKUP_LIMIT=5
+	$ visudo /etc/sudoers
+		foo ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+	$ systemctl --user enable psd.service
+	$ systemctl --user start psd.service
+	$ psd p

@@ -113,7 +113,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "systemctl poweroff"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -160,8 +161,9 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 floating_modifier $mod
 
 # screenshot
-bindsym $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -b -u -e 'mv $f ~/Files/screenshots/'
-bindsym $mod+Shift+x exec scrot '%Y-%m-%d-%H%M%S-full.png' -b -e 'mv $f ~/Files/screenshots/'
+#bindsym $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -b -u -e 'mv $f ~/Pictures/'
+bindsym --release $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -s -e 'mv $f ~/Pictures/'
+bindsym $mod+Shift+x exec scrot '%Y-%m-%d-%H%M%S-full.png' -b -e 'mv $f ~/Pictures/'
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -177,11 +179,12 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
-# Touchpad, tap to click
-exec xinput set-prop 13 291 1
+# Touchpad, tap to click, natural scrolling
+exec xinput set-prop 11 273 1
+exec xinput set-prop 11 283 1
 
 # Return to previous workspace
 workspace_auto_back_and_forth yes

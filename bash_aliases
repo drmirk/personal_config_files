@@ -1,1 +1,5 @@
-alias complex_notes="cd /mnt/work/drmirk\'s_projects/complex_notes/; source activate notes;"
+alias complex_notes="source /home/ibrahim/python_envs/notes/bin/activate; cd /mnt/work/drmirk\'s_projects/complex_notes/;"
+alias spaced_learning="source /home/ibrahim/python_envs/flash/bin/activate; cd /mnt/work/drmirk\'s_projects/spaced_learning/;"
+alias pip="pip3"
+alias python="python3"
+alias ipython="ipython3"

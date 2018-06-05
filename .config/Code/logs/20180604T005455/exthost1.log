@@ -1,0 +1,18 @@
+[2018-06-04 00:54:57.926] [exthost1] [info] extension host started
+[2018-06-04 00:54:58.028] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-04 00:54:58.028] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-04 00:54:58.234] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-04 00:54:58.234] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-06-04 00:54:58.520] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-04 00:54:58.520] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-04 00:54:58.540] [exthost1] [info] ExtensionService#_doActivateExtension robertohuertasm.vscode-icons {"startup":true,"activationEvent":"*"}
+[2018-06-04 00:54:58.540] [exthost1] [info] ExtensionService#loadCommonJSModule /home/ibrahim/.vscode/extensions/robertohuertasm.vscode-icons-7.23.0/out/src/
+[2018-06-04 00:54:58.714] [exthost1] [info] eager extensions activated
+[2018-06-04 00:56:40.794] [exthost1] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools {"startup":false,"activationEvent":"onLanguage:c"}
+[2018-06-04 00:56:40.794] [exthost1] [info] ExtensionService#loadCommonJSModule /home/ibrahim/.vscode/extensions/ms-vscode.cpptools-0.17.4/out/src/main
+[2018-06-04 00:57:10.999] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.code-runner {"startup":false,"activationEvent":"onCommand:code-runner.run"}
+[2018-06-04 00:57:10.999] [exthost1] [info] ExtensionService#loadCommonJSModule /home/ibrahim/.vscode/extensions/formulahendry.code-runner-0.9.3/out/src/extension
+[2018-06-04 01:06:57.361] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-04 01:06:57.361] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/configuration-editing/out/extension
+[2018-06-04 01:06:57.376] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-04 01:06:57.376] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/json-language-features/client/out/jsonMain

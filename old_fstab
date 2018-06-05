@@ -1,0 +1,35 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda9 during installation
+UUID=35367ad5-ea34-48c2-9fad-1084b54cf17b	/	ext4	noatime,errors=remount-ro	0	1
+# /boot/efi was on /dev/sda2 during installation
+UUID=001A-3CFD	/boot/efi	vfat	umask=0077	0	1
+/swapfile	none	swap	sw	0	0
+
+
+#windows
+UUID=A4CE29E6CE29B18A	/mnt/windows	auto	rw,nosuid,nodev,auto,user,exec,async,noatime,uid=1000,gid=1000,umask=077,locale=en_US.UTF-8	0	0
+
+#soft
+UUID=765EEDCC5EED8569	/mnt/soft	auto	rw,nosuid,nodev,auto,user,exec,async,noatime,uid=1000,gid=1000,umask=077,locale=en_US.UTF-8	0	0
+
+#tuts
+UUID=72AC0B0AAC0AC895	/mnt/tuts	auto	rw,nosuid,nodev,auto,user,exec,async,noatime,uid=1000,gid=1000,umask=077,locale=en_US.UTF-8	0	0
+
+#work
+UUID=B062C61A62C5E4E6	/mnt/work	auto	rw,nosuid,nodev,auto,user,exec,async,noatime,uid=1000,gid=1000,umask=077,locale=en_US.UTF-8	0	0
+
+#others
+UUID=5A422B62422B41DD	/mnt/others	auto	rw,nosuid,nodev,auto,user,exec,async,noatime,uid=1000,gid=1000,umask=077,locale=en_US.UTF-8	0	0
+
+
+#TMPFS
+tmpfs	/tmp	tmpfs	rw,nodev,nosuid,noatime,size=2G	0	0
+tmpfs	/var/spool	tmpfs	rw,noexec,nodev,nosuid,noatime,size=512M	0	0 
+tmpfs	/var/log	tmpfs	rw,noexec,nodev,nosuid,noatime,size=512M	0	0
+tmpfs	/home/ibrahim/.cache	tmpfs	rw,nodev,nosuid,noatime,size=512M,uid=1000,gid=1000,mode=0700	0	0

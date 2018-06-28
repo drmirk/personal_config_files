@@ -1,21 +1,25 @@
-1. install sudo and add user to sudo
-2. edit /etc/apt/sources.list
-3. update
-4. make swap file:
+- # apt install sudo
+- # adduser ibrahim sudo
+- # nano /etc/apt/sources.list
+- # apt update && apt upgrade
+- # apt fullupgrade
+- make swap file:
 	$ sudo fallocate -l 2G /swapfile
 	$ sudo chmod 600 /swapfile
 	$ sudo mkswap /swapfile
 	$ sudo swapon /swapfile
-5. $ mkdir /mnt/all_files
-6. edit fstab
-7. check swappiness property:
+- edit fstab
+	# mkdir /mnt/all_files
+	# nano /etc/fstab
+- # check swappiness property:
 	$ cat /proc/sys/vm/swappiness
-8. change swappiness:
+- # change swappiness:
 	$ sudo nano /etc/sysctl.conf
 		#SET SWAPPINESS
 		vm.swappiness=0
-9. install powertop, tlp, smartmontools
-10. install profile-sync-daemon
+- $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
+- $ sudo apt install i3 xinput xbacklight git scrot htop build-essential gnome-mpv vlc fonts-beng clang ipython3 ttf-mscorefonts-installer ttf-dejavu powertop, tlp, smartmontools profile-sync-daemon
+- edit profile-sync-daemon
 	$ psd
 	$ vi /home/ibrahim/.config/psd/psd.conf
 		USE_OVERLAYFS="yes"
@@ -26,31 +30,31 @@
 	$ systemctl --user enable psd.service
 	$ systemctl --user start psd.service
 	$ psd p
-11. install vscode, chrome
-12. $ sudo apt install intel-microcode
-13. $ sudo apt install firmware-amd-graphics
-14. $ sudo apt install firmware-misc-nonfree
-15. $ sudo apt install i3 xinput xbacklight git scrot htop
-16. create file to control brightness in i3:
+- $ create file to control brightness in i3:
 	$ sudo nano /etc/X11/xorg.conf
 		Section "Device"
 		Identifier "Card0"
 		Driver "intel"
 		Option "backlight" "/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlig$
 		EndSection
-17. copy .config folders for Code, i3 and i3Status
-18. copy .vscode folder
-19. cp bashrc ~/.bashrc
-20. cp bash_aliases ~/.bash_aliases
-21. cp .gitconfig ~/
-22. Install lastpass
-23. $ sudo apt install build-essential
-24. install anki
-25. $ sudo apt install ./ttf-bengali-fonts_1.1_all.deb
-26. $ sudo cp ~/Downloads/skl_dmc_ver1_27.bin /lib/firmware/i915/
-27. Edit grub menu:
+- $ sudo apt install ./vscode ./chrome
+- copy .config folders for Code, i3 and i3Status
+- copy .vscode folder onto home
+- cp bashrc ~/.bashrc
+- cp bash_aliases ~/.bash_aliases
+- cp .gitconfig ~/
+- Install lastpass
+- install anki
+- $ sudo cp ~/Downloads/skl_dmc_ver1_27.bin /lib/firmware/i915/
+- Edit grub menu:
 	$ sudo nano /etc/default/grub
-28. $ sudo apt install gnome-mpv scrot
-29. $ ln -s /mnt/all_files/soft soft
-30. $ ln -s /mnt/all_files/work work
-31. % ln -s /mnt/all_files/others others
+	$ sudo update-grub
+- $ ln -s /mnt/all_files/soft ~/soft
+- $ ln -s /mnt/all_files/work ~/work
+- $ ln -s /mnt/all_files/others ~/others
+- $ ln -s /mnt/all_files/soft /soft
+- $ ln -s /mnt/all_files/work /work
+- $ ln -s /mnt/all_files/others /others
+- Change permissions:
+	find . -type d -exec chmod 755 {} \;
+	find . -type f -exec chmod 644 {} \;

@@ -2,6 +2,8 @@
 - # adduser ibrahim sudo
 - # nano /etc/apt/sources.list
 - # apt update && apt upgrade
+	- disable minissdp
+	- enable auto restart services
 - # apt fullupgrade
 - make swap file:
 	$ sudo fallocate -l 2G /swapfile
@@ -18,14 +20,14 @@
 		#SET SWAPPINESS
 		vm.swappiness=0
 - $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
-- $ sudo apt install i3 xinput xbacklight git scrot htop build-essential gnome-mpv vlc fonts-beng clang ipython3 ttf-mscorefonts-installer ttf-dejavu powertop, tlp, smartmontools profile-sync-daemon
+- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon emacs p7zip p7zip-rar calibre
 - edit profile-sync-daemon
 	$ psd
-	$ vi /home/ibrahim/.config/psd/psd.conf
+	$ nano /home/ibrahim/.config/psd/psd.conf
 		USE_OVERLAYFS="yes"
 		USE_BACKUPS="yes"
 		BACKUP_LIMIT=5
-	$ visudo /etc/sudoers
+	$ sudo nano /etc/sudoers
 		ibrahim ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
 	$ systemctl --user enable psd.service
 	$ systemctl --user start psd.service
@@ -35,26 +37,52 @@
 		Section "Device"
 		Identifier "Card0"
 		Driver "intel"
-		Option "backlight" "/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlig$
+		Option "backlight" "/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight
 		EndSection
 - $ sudo apt install ./vscode ./chrome
 - copy .config folders for Code, i3 and i3Status
-- copy .vscode folder onto home
+- vscode extensions:
+    - Code Runner - Jun Hancopy
+    - Python - Microsoft
+    - Intellicode - Microsoft
+    - C/C++ - Microsoft
+    - vscode-icons - Roberto Huertas
+    - Fantastic - Sergio Luiz Dobari
 - cp bashrc ~/.bashrc
 - cp bash_aliases ~/.bash_aliases
 - cp .gitconfig ~/
 - Install lastpass
 - install anki
-- $ sudo cp ~/Downloads/skl_dmc_ver1_27.bin /lib/firmware/i915/
 - Edit grub menu:
 	$ sudo nano /etc/default/grub
 	$ sudo update-grub
-- $ ln -s /mnt/all_files/soft ~/soft
-- $ ln -s /mnt/all_files/work ~/work
-- $ ln -s /mnt/all_files/others ~/others
-- $ ln -s /mnt/all_files/soft /soft
-- $ ln -s /mnt/all_files/work /work
-- $ ln -s /mnt/all_files/others /others
+- $ ln -s /mnt/all_files/soft ~/soft && ln -s /mnt/all_files/work ~/work && ln -s /mnt/all_files/others ~/others
+- $ sudo ln -s /mnt/all_files/soft /soft && sudo ln -s /mnt/all_files/work /work && sudo ln -s /mnt/all_files/others /others
 - Change permissions:
-	find . -type d -exec chmod 755 {} \;
-	find . -type f -exec chmod 644 {} \;
+	find /mnt/all_files -type d -exec chmod 755 {} \;
+	find /mnt/all_files -type f -exec chmod 644 {} \;
+- Install spacemacs
+	- Download and unzip Source Code Pro from: https://fonts.google.com/specimen/Source+Code+Pro
+	$ sudo cp -r ~/Downloads/Source_Code_Pro /usr/local/share/fonts/
+	$ fc-cache -f -v
+	$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+- Setup Clion
+	- https://over12421.com/
+	- /mnt/all_files/soft/Clion/bin/clion.vmoptions
+	- /mnt/all_files/soft/Clion/bin/clion.vmoptions64
+		"-javaagent:/mnt/all_files/soft/Clion/bin/Patch.jar"
+	$ sudo ln -s /mnt/all_files/soft/Clion/bin/clion.sh clion
+- Dolphin setup
+    - nano /home/ibrahim/.local/share/applications/dolphin.desktop
+            #!/usr/bin/env xdg-open
+            [Desktop Entry]
+            Version=1.0
+            Terminal=false
+            Type=Application
+            Name=Files
+            Exec=XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin
+- sudo apt install gcc-7
+  sudo apt install linux-headers-4.18.0-1-amd64
+- Change directory to open in nautilus instead of vscode
+	$ gedit /home/ibrahim/.config/mimeapps.list
+	- Move "inode/directory=org.gnome.Nautilus.desktop;" from [Added Associations] to [Default Applications]

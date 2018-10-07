@@ -6,18 +6,18 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/sda2 during installation
-UUID=2b71ca92-fdc6-4471-a117-eb5fce558f96 /               ext4    noatime,errors=remount-ro	0       1
+UUID=3bdc86d4-202e-4b05-8aaf-5315f14b37ed /               ext4    noatime,errors=remount-ro 0       1
 # /boot/efi was on /dev/sda1 during installation
-UUID=288D-4CC8  /boot/efi       vfat    umask=0077      0       1
+UUID=0E72-6EE9  /boot/efi       vfat    umask=0077      0       1
 /swapfile                                 none            swap    sw              0       0
-
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
 
 
 # all_files
 UUID=8a02fa6f-72ba-42f8-bbf5-6e7c6adaf3af	/mnt/all_files	ext4	rw,nosuid,nodev,auto,user,exec,async,noatime	0	0
 
 # TMPFS
-tmpfs	/tmp	tmpfs	rw,nodev,nosuid,noatime,size=2G	0	0
-tmpfs	/var/spool	tmpfs	rw,noexec,nodev,nosuid,noatime,size=512M	0	0 
-tmpfs	/var/log	tmpfs	rw,noexec,nodev,nosuid,noatime,size=512M	0	0
-tmpfs	/home/ibrahim/.cache	tmpfs	rw,nodev,nosuid,noatime,size=512M,uid=1000,gid=1000,mode=0700	0	0
+tmpfs	/tmp	tmpfs	rw,nodev,nosuid,noatime,size=4G	0	0
+tmpfs	/var/spool	tmpfs	rw,noexec,nodev,nosuid,noatime,size=1G	0	0 
+tmpfs	/var/log	tmpfs	rw,noexec,nodev,nosuid,noatime,size=1G	0	0
+tmpfs	/home/ibrahim/.cache	tmpfs	rw,nodev,nosuid,noatime,size=1G,uid=1000,gid=1000,mode=0700	0	0

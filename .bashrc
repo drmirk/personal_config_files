@@ -121,3 +121,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# add flutter path
+export PATH=$PATH:/mnt/all_files/soft/flutter/bin
+
+# add android path
+export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/android-studio/bin
+export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/sdk/tools
+export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/sdk/platform-tools

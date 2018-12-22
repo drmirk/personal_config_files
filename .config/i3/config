@@ -145,10 +145,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
+# set $bg-color 	         #2f343f
+set $bg-color 	         #000000
+# set $inactive-bg-color   #2f343f
+set $inactive-bg-color   #000000
+# set $text-color          #f3f4f5
+set $text-color          #ffffff
+# set $inactive-text-color #676E7D
+set $inactive-text-color #788296i
 set $urgent-bg-color     #E53935
 
 # window colors
@@ -163,9 +167,11 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 floating_modifier $mod
 
 # screenshot
-#bindsym $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -b -u -e 'mv $f ~/Pictures/'
-bindsym --release $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -s -e 'mv $f ~/Pictures/'
-bindsym $mod+Shift+x exec scrot '%Y-%m-%d-%H%M%S-full.png' -b -e 'mv $f ~/Pictures/'
+#bindsym $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -b -u -e 'mv $f ~/Pictures/' #original
+# bindsym --release $mod+x exec scrot '%Y-%m-%d-%H%M%S.png' -s -e 'mv $f ~/Pictures/' #using scrot
+# bindsym $mod+Shift+x exec scrot '%Y-%m-%d-%H%M%S-full.png' -b -e 'mv $f ~/Pictures/' #using scrot
+bindsym --release $mod+x exec maim -s -u ~/Pictures/$(date +%Y-%m-%d-%H%M%S).png
+bindsym --release $mod+Shift+x exec maim -u ~/Pictures/$(date +%Y-%m-%d-%H%M%S)-full.png
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -197,3 +203,10 @@ exec xset b off
 
 # Set background color
 exec xsetroot -solid "#333333"
+
+# Open File Manager
+bindsym --release $mod+q exec --no-startup-id nautilus -w
+# Open Google Chrome
+bindsym --release $mod+g exec google-chrome
+# Open VS Code
+bindsym --release $mod+shift+c exec code

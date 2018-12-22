@@ -1,0 +1,17 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.toggleActivityBarVisibility",
+		"when": "sidebarVisible"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-extension.vim_ctrl+j",
+		"when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	}
+]

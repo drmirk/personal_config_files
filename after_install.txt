@@ -4,23 +4,35 @@
 - # apt update && apt upgrade
 	- disable minissdp
 	- enable auto restart services
+
 - # apt fullupgrade
 - make swap file:
 	$ sudo fallocate -l 2G /swapfile
 	$ sudo chmod 600 /swapfile
 	$ sudo mkswap /swapfile
 	$ sudo swapon /swapfile
+
+
 - edit fstab
 	# mkdir /mnt/all_files
 	# nano /etc/fstab
+
+
 - # check swappiness property:
 	$ cat /proc/sys/vm/swappiness
+
+
 - # change swappiness:
 	$ sudo nano /etc/sysctl.conf
 		#SET SWAPPINESS
 		vm.swappiness=0
+
+
 - $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
-- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon emacs p7zip p7zip-rar calibre
+
+- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload
+
+
 - edit profile-sync-daemon
 	$ psd
 	$ nano /home/ibrahim/.config/psd/psd.conf
@@ -32,6 +44,8 @@
 	$ systemctl --user enable psd.service
 	$ systemctl --user start psd.service
 	$ psd p
+
+
 - $ create file to control brightness in i3:
 	$ sudo nano /etc/X11/xorg.conf
 		Section "Device"
@@ -39,39 +53,64 @@
 		Driver "intel"
 		Option "backlight" "/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight
 		EndSection
+
+
 - $ sudo apt install ./vscode ./chrome
-- copy .config folders for Code, i3 and i3Status
+
+
 - vscode extensions:
-    - Code Runner - Jun Hancopy
-    - Python - Microsoft
-    - Intellicode - Microsoft
-    - C/C++ - Microsoft
-    - vscode-icons - Roberto Huertas
-    - Fantastic - Sergio Luiz Dobari
-- cp bashrc ~/.bashrc
-- cp bash_aliases ~/.bash_aliases
-- cp .gitconfig ~/
+	- Code Runner - Jun Hancopy
+	- Python - Microsoft
+	- C/C++ - Microsoft
+	- vscode-icons - Roberto Huertas
+	- Fantastic - Sergio Luiz Dobari
+	- vim - vscodevim
+
+
+
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User/keybindings.json
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User/settings.json
+- ln -s /mnt/all_files/work/personal_configs/.config/i3/config /home/ibrahim/.config/i3/config
+- ln -s /mnt/all_files/work/personal_configs/.config/i3status/config /home/ibrahim/.config/i3status/config
+- ln -s /mnt/all_files/work/personal_configs/.bashrc /home/ibrahim/.bashrc
+- ln -s /mnt/all_files/work/personal_configs/.bash_aliases /home/ibrahim/.bash_aliases
+- ln -s /mnt/all_files/work/personal_configs/.gitconfig /home/ibrahim/.gitconfig
+
+
 - Install lastpass
 - install anki
+
 - Edit grub menu:
 	$ sudo nano /etc/default/grub
 	$ sudo update-grub
+
+
 - $ ln -s /mnt/all_files/soft ~/soft && ln -s /mnt/all_files/work ~/work && ln -s /mnt/all_files/others ~/others
+
+
 - $ sudo ln -s /mnt/all_files/soft /soft && sudo ln -s /mnt/all_files/work /work && sudo ln -s /mnt/all_files/others /others
+
+
 - Change permissions:
 	find /mnt/all_files -type d -exec chmod 755 {} \;
 	find /mnt/all_files -type f -exec chmod 644 {} \;
+
+
 - Install spacemacs
 	- Download and unzip Source Code Pro from: https://fonts.google.com/specimen/Source+Code+Pro
 	$ sudo cp -r ~/Downloads/Source_Code_Pro /usr/local/share/fonts/
 	$ fc-cache -f -v
 	$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+
 - Setup Clion
 	- https://over12421.com/
 	- /mnt/all_files/soft/Clion/bin/clion.vmoptions
 	- /mnt/all_files/soft/Clion/bin/clion.vmoptions64
 		"-javaagent:/mnt/all_files/soft/Clion/bin/Patch.jar"
 	$ sudo ln -s /mnt/all_files/soft/Clion/bin/clion.sh clion
+
+
 - Dolphin setup
     - nano /home/ibrahim/.local/share/applications/dolphin.desktop
             #!/usr/bin/env xdg-open
@@ -81,8 +120,27 @@
             Type=Application
             Name=Files
             Exec=XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin
+
+
+- copy .local directory to home for qt shortcuts
 - sudo apt install gcc-7
-  sudo apt install linux-headers-4.18.0-1-amd64
+  sudo apt install linux-headers-4.18.0-2-amd64
+
+
 - Change directory to open in nautilus instead of vscode
 	$ gedit /home/ibrahim/.config/mimeapps.list
 	- Move "inode/directory=org.gnome.Nautilus.desktop;" from [Added Associations] to [Default Applications]
+
+
+- crontab for battery
+	$ sudo crontab -e
+	*/5 * * * * python /mnt/all_files/work/personal_configs/battery_low/battery_low.py
+
+
+- install flutter
+	$ sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+	$ sudo adduser ibrahim libvirt
+	$ sudo adduser ibrahim libvirt-qemu
+	$ ln -s /mnt/all_files/soft/android-studio-ide/.android /home/ibrahim/.android
+	$ ln -s /mnt/all_files/soft/android-studio-ide/.AndroidStudio3.2 /home/ibrahim/.AndroidStudio3.2
+	$ ln -s /mnt/all_files/soft/android-studio-ide/.gradle /home/ibrahim/.gradle

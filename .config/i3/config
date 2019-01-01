@@ -109,11 +109,14 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# # exit i3 (logs you out of your X session)
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# sleep (logs you out of your X session)
+bindsym $mod+Shift+e exec "systemctl suspend"
 # shutdown the system
 bindsym $mod+Control+Shift+e exec "systemctl poweroff"
 #bindsym $mod+Control+Shift+e exec "shutdown -h now"
@@ -191,8 +194,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad, tap to click, natural scrolling
-exec xinput set-prop 11 281 1
-exec xinput set-prop 11 289 1
+exec xinput set-prop 11 287 1
+exec xinput set-prop 11 295 1
 
 # Return to previous workspace
 workspace_auto_back_and_forth yes
@@ -207,6 +210,6 @@ exec xsetroot -solid "#333333"
 # Open File Manager
 bindsym --release $mod+q exec --no-startup-id nautilus -w
 # Open Google Chrome
-bindsym --release $mod+g exec google-chrome
+bindsym --release $mod+shift+z exec google-chrome
 # Open VS Code
-bindsym --release $mod+shift+c exec code
+bindsym --release $mod+shift+c exec /usr/share/code/code

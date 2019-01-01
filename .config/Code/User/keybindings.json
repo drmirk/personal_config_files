@@ -13,5 +13,9 @@
 	{
 		"key": "ctrl+b",
 		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "alt+b",
+		"command": "workbench.action.toggleSidebarVisibility"
 	}
 ]

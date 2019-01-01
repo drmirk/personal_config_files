@@ -10,7 +10,7 @@
 			"request": "launch",
 			"program": "${fileDirname}/${fileBasenameNoExtension}",
 			"args": [],
-			"preLaunchTask": "debug",
+			"preLaunchTask": "debug++",
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",
 			"environment": [],

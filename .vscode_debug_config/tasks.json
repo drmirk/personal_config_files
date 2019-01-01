@@ -10,6 +10,9 @@
 			"args": [
 				"${file}",
 				"-o",
+				"-Wall",
+				"-Wextra",
+				"-std=c++17",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			]
 		},
@@ -17,6 +20,17 @@
 			"label": "debug",
 			"type": "shell",
 			"command": "clang",
+			"args": [
+				"${file}",
+				"-ggdb3",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			]
+		},
+		{
+			"label": "debug++",
+			"type": "shell",
+			"command": "clang++",
 			"args": [
 				"${file}",
 				"-ggdb3",

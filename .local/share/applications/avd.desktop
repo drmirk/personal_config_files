@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/mnt/all_files/soft/android-studio-ide/sdk/emulator/emulator -avd Nexus_5X_API_28 -accel on -no-boot-anim
+Name=AVD
+GenericName=Emulator for Android development.
+Terminal=false
+Categories=Development;IDE;Android;

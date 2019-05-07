@@ -123,15 +123,12 @@ if ! shopt -oq posix; then
 fi
 
 # add flutter path
-export PATH=$PATH:/mnt/all_files/soft/flutter/bin
-export PATH=$PATH:/mnt/all_files/soft/flutter/bin/cache/dart-sdk/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter/bin/cache/dart-sdk/bin
 
 # add android path
-export ANDROID_HOME=/mnt/all_files/soft/android-studio-ide/sdk
-export ANDROID_SDK_ROOT=/mnt/all_files/soft/android-studio-ide/sdk
-export ANDROID_SDK_HOME=/mnt/all_files/soft/android-studio-ide/.android
-export ANDROID_EMULATOR_HOME=/mnt/all_files/soft/android-studio-ide/.android
-export ANDROID_AVD_HOME=/mnt/all_files/soft/android-studio-ide/.android/avd
-export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/android-studio/bin
-export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/sdk/tools
-export PATH=$PATH:/mnt/all_files/soft/android-studio-ide/sdk/platform-tools
+export ANDROID_HOME=/mnt/all_files/soft/Android/Sdk
+export PATH=$PATH:/home/ibrahim/Android/android-studio/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools

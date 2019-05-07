@@ -1,11 +1,13 @@
+- # fstrim -a -v
 - # apt install sudo
 - # adduser ibrahim sudo
-- # nano /etc/apt/sources.list
+- # apt install vim
+- # vim /etc/apt/sources.list
 - # apt update && apt upgrade
 	- disable minissdp
 	- enable auto restart services
 
-- # apt fullupgrade
+- # apt full-upgrade
 - make swap file:
 	$ sudo fallocate -l 2G /swapfile
 	$ sudo chmod 600 /swapfile
@@ -30,15 +32,16 @@
 
 - $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
 
-- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload
+- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload curl gifsicle
 
 
 - edit profile-sync-daemon
 	$ psd
 	$ nano /home/ibrahim/.config/psd/psd.conf
 		USE_OVERLAYFS="yes"
+		BROWSERS="firefox google-chrome"
 		USE_BACKUPS="yes"
-		BACKUP_LIMIT=5
+		BACKUP_LIMIT=2
 	$ sudo nano /etc/sudoers
 		ibrahim ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
 	$ systemctl --user enable psd.service
@@ -59,22 +62,28 @@
 
 
 - vscode extensions:
-	- Code Runner - Jun Hancopy
-	- Python - Microsoft
-	- C/C++ - Microsoft
-	- vscode-icons - Roberto Huertas
-	- Fantastic - Sergio Luiz Dobari
+	- C/C++
+	- Code Runner
+	- Dart
+	- Flutter
+	- Project Manager
+	- Python
 	- vim - vscodevim
+	- vscode-icons
+	- Fantastic
 
 
 
-- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User/keybindings.json
-- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User/settings.json
-- ln -s /mnt/all_files/work/personal_configs/.config/i3/config /home/ibrahim/.config/i3/config
-- ln -s /mnt/all_files/work/personal_configs/.config/i3status/config /home/ibrahim/.config/i3status/config
-- ln -s /mnt/all_files/work/personal_configs/.bashrc /home/ibrahim/.bashrc
-- ln -s /mnt/all_files/work/personal_configs/.bash_aliases /home/ibrahim/.bash_aliases
-- ln -s /mnt/all_files/work/personal_configs/.gitconfig /home/ibrahim/.gitconfig
+
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User
+- ln -s /mnt/all_files/work/personal_configs/.config/i3 /home/ibrahim/.config/
+- ln -s /mnt/all_files/work/personal_configs/.config/i3status /home/ibrahim/.config/
+- ln -s /mnt/all_files/work/personal_configs/.config/pulse/daemon.conf /home/ibrahim/.config/pulse
+- ln -s /mnt/all_files/work/personal_configs/.local/share/applications/* /home/ibrahim/.local/share/applications/
+- ln -s /mnt/all_files/work/personal_configs/.bashrc /home/ibrahim
+- ln -s /mnt/all_files/work/personal_configs/.bash_aliases /home/ibrahim
+- ln -s /mnt/all_files/work/personal_configs/.gitconfig /home/ibrahim
 
 
 - Install lastpass
@@ -85,21 +94,28 @@
 	$ sudo update-grub
 
 
-- $ ln -s /mnt/all_files/soft ~/soft && ln -s /mnt/all_files/work ~/work && ln -s /mnt/all_files/others ~/others
+- $ ln -s /mnt/all_files/soft ~/ && ln -s /mnt/all_files/work ~/ && ln -s /mnt/all_files/others ~/
 
 
-- $ sudo ln -s /mnt/all_files/soft /soft && sudo ln -s /mnt/all_files/work /work && sudo ln -s /mnt/all_files/others /others
+- $ sudo ln -s /mnt/all_files/soft / && sudo ln -s /mnt/all_files/work / && sudo ln -s /mnt/all_files/others /
 
 
 - Change permissions:
 	find /mnt/all_files -type d -exec chmod 755 {} \;
 	find /mnt/all_files -type f -exec chmod 644 {} \;
 
-
-- Install spacemacs
+- Install Source Code Pro:
 	- Download and unzip Source Code Pro from: https://fonts.google.com/specimen/Source+Code+Pro
 	$ sudo cp -r ~/Downloads/Source_Code_Pro /usr/local/share/fonts/
 	$ fc-cache -f -v
+
+- Install Fira Code:
+	$ sudo apt install fonts-firacode
+	$ fc-cache -f -v
+
+
+
+- Install spacemacs
 	$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 
@@ -122,9 +138,9 @@
             Exec=XDG_CURRENT_DESKTOP=kde /usr/bin/dolphin
 
 
-- copy .local directory to home for qt shortcuts
+
 - sudo apt install gcc-7
-  sudo apt install linux-headers-4.18.0-2-amd64
+  sudo apt install linux-headers-4.19.0-4-amd64
 
 
 - Change directory to open in nautilus instead of vscode
@@ -132,15 +148,11 @@
 	- Move "inode/directory=org.gnome.Nautilus.desktop;" from [Added Associations] to [Default Applications]
 
 
-- crontab for battery
-	$ sudo crontab -e
-	*/5 * * * * python /mnt/all_files/work/personal_configs/battery_low/battery_low.py
-
 
 - install flutter
-	$ sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+	$ sudo apt-get install qemu-kvm libvirt-clients qemu-utils libvirt-daemon-system
 	$ sudo adduser ibrahim libvirt
 	$ sudo adduser ibrahim libvirt-qemu
-	$ ln -s /mnt/all_files/soft/android-studio-ide/.android /home/ibrahim/.android
-	$ ln -s /mnt/all_files/soft/android-studio-ide/.AndroidStudio3.2 /home/ibrahim/.AndroidStudio3.2
-	$ ln -s /mnt/all_files/soft/android-studio-ide/.gradle /home/ibrahim/.gradle
+	$ ln -s /mnt/all_files/soft/Android ~/
+	$ ln -s ~/Android/.android ~/
+	$ ln -s ~/Android/.gradle ~/

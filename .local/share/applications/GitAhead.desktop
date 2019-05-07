@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/mnt/all_files/soft/GitAhead/GitAhead 
+Name=Git Ahead
+GenericName=Git Gui.
+Terminal=false
+Categories=Development;

@@ -1,9 +1,13 @@
 // Place your key bindings in this file to overwrite the defaults
 [
+	// {
+	// 	"key": "ctrl+b",
+	// 	"command": "workbench.action.toggleActivityBarVisibility",
+	// 	"when": "sidebarVisible"
+	// },
 	{
 		"key": "ctrl+b",
-		"command": "workbench.action.toggleActivityBarVisibility",
-		"when": "sidebarVisible"
+		"command": "workbench.action.toggleActivityBarVisibility"
 	},
 	{
 		"key": "ctrl+j",

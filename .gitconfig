@@ -6,6 +6,9 @@
 	ui = true
 [core]
 	autocrlf = input
+	quotepath = false
 [alias]
 	s = status -s
 	lg = log --oneline --all --graph --decorate
+[gui]
+	recentrepo = /mnt/all_files/work/learning_flutter

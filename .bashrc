@@ -122,6 +122,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# set default editor
+export EDITOR=vim
+
 # add flutter path
 export PATH=$PATH:/home/ibrahim/Android/flutter/bin
 export PATH=$PATH:/home/ibrahim/Android/flutter/bin/cache/dart-sdk/bin

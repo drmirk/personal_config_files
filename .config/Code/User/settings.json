@@ -29,6 +29,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.lineNumbers": "on",
+  "editor.minimap.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.quickSuggestions": {
     "comments": true,
@@ -39,6 +40,7 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordWrap": "bounded",
+  "errorLens.infoColor": "rgba(150,150,0,0.4)",
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "files.autoSave": "off",
@@ -161,12 +163,11 @@
   },
   "workbench.colorTheme": "Monokai",
   "workbench.enableExperiments": false,
+  "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "ui",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "left",
   "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": true,
-  "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.minimap.enabled": true
+  "window.zoomLevel": 0
 }

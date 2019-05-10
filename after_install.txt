@@ -156,3 +156,9 @@
 	$ ln -s /mnt/all_files/soft/Android ~/
 	$ ln -s ~/Android/.android ~/
 	$ ln -s ~/Android/.gradle ~/
+	
+
+- install crontab
+	$ export EDITOR=vi
+	$ crontab -e
+	$ */15 * * * * /mnt/all_files/work/personal_configs/status_notification.sh

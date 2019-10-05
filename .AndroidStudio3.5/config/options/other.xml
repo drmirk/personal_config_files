@@ -1,0 +1,50 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="AndroidInitConfigurator.V1" value="true" />
+    <property name="AndroidInitConfigurator.V3" value="true" />
+    <property name="AndroidInitConfigurator.V5" value="true" />
+    <property name="AndroidPlatformName" value="Android API 28 Platform" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="DART_CHECK_SDK_UPDATE_KEY" value="DoNotCheck" />
+    <property name="DART_SDK_KNOWN_PATHS" value="$USER_HOME$/Android/flutter-stable/bin/cache/dart-sdk&#10;/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="FLUTTER_COMPANY_DOMAIN" value="drmirk.com" />
+    <property name="FLUTTER_LAST_SURVEY_CHECK_KEY" value="1566653907001" />
+    <property name="FLUTTER_PROJECT_KOTLIN_SUPPORT" value="true" />
+    <property name="FLUTTER_PROJECT_SWIFT_SUPPORT" value="true" />
+    <property name="FLUTTER_SDK_KNOWN_PATHS" value="$USER_HOME$/Android/flutter-beta&#10;/home/ibrahim/Android/flutter-stable&#10;/mnt/all_files/soft/Android/flutter" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="InstalledPluginsSearchHistory" value="the" />
+    <property name="KEYMAP" value="rename&#10;run&#10;context&#10;docu&#10;file" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="RegistryRecentKeys" value="dart.server.vm.options=dart.server.additional.arguments" />
+    <property name="SettingsSearchHistory" value="gradle&#10;import&#10;declaration&#10;quick&#10;documentation" />
+    <property name="TrendingPluginsSearchHistory" value="color scheme&#10;theme&#10;flutter" />
+    <property name="android-component-compatibility-check" value="1564643927378" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="export.settings.path" value="$USER_HOME$/settings.zip" />
+    <property name="file.chooser.recent.files" value="/work/all_projects/things_to_do&#10;/work/learning/flutter_learning&#10;/work/all_projects/accelerate_reading&#10;/work/all_projects/scrapbook&#10;/work/all_projects/apps&#10;/work/all_projects/games&#10;/work/all_projects/Game&#10;/home/ibrahim/Android/flutter-stable/bin/cache/dart-sdk&#10;/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk&#10;/home/ibrahim/Android/flutter-beta&#10;/home/ibrahim/Android/flutter-stable&#10;/work/learning/flutter_game/lib/src/box_game.dart&#10;/work/learning/flutter_game/lib/main.dart&#10;/work/learning/flutter_game" />
+    <property name="file.gist.reindex.count" value="56" />
+    <property name="fileTypeChangedCounter" value="68" />
+    <property name="ignore.power.save.mode" value="true" />
+    <property name="installed.kotlin.plugin.version" value="1.3.50-release-Studio3.5-1" />
+    <property name="io.flutter.analytics.clientId" value="4db79685-2939-452e-b113-85fcfb8ceb02" />
+    <property name="io.flutter.analytics.optOut" value="true" />
+    <property name="io.flutter.analytics.toastShown" value="true" />
+    <property name="io.flutter.console.preferencesSet" value="true" />
+    <property name="io.flutter.formatCodeOnSave" value="true" />
+    <property name="io.flutter.survey.2019.q3.alreadyTaken" value="true" />
+    <property name="kotlin.lastUpdateCheck" value="1566500162883" />
+    <property name="kotlin.plugin.releaseDate" value="1.3.50-release-Studio3.5-1:2019-08-22" />
+    <property name="mt.showStatisticsAgreement" value="false" />
+    <property name="newly.installed.api.level" value="29" />
+    <property name="power.save.mode" value="true" />
+    <property name="selected.color.option.type" value="Groovy constructor declaration" />
+    <property name="settings.code.style.selected.tab.ObjectiveC" value="Code Generation" />
+    <property name="structural.search.match.case" value="true" />
+    <property name="structural.search.recursive" value="true" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+</application>

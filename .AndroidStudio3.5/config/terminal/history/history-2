@@ -1,0 +1,288 @@
+#1569422860
+iwlist wlp3s0 scanning
+#1569422860
+sudo vi /etc/wpa_supplicant.conf
+#1569422860
+sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant.conf -D wext
+#1569422860
+sudo dhclient wlp3s0
+#1569422860
+ping www.google.com
+#1569422860
+sudo apt install vim
+#1569422860
+sudo vim /etc/apt/sources.list
+#1569422860
+sudo apt update
+#1569422860
+sudo fstrim -a -v
+#1569422860
+sudo apt install gnome-core
+#1569422860
+sudo fstrim -a -v
+#1569422860
+ls -la
+#1569422860
+vim .bashrc
+#1569422860
+clear
+#1569422860
+sudo reboot
+#1569422860
+git
+#1569422860
+sudo apt install git
+#1569422860
+clear
+#1569422860
+git s
+#1569422860
+git status
+#1569422860
+sudo vim /etc/X11/xorg.conf
+#1569422860
+sudo fstrim -a -v
+#1569422860
+sudo apt install sudo
+#1569422860
+sudo vim /etc/apt/sources.list
+#1569422860
+sudo fallocate -l 2G /swapfile
+#1569422860
+sudo chmod 600 /swapfile
+#1569422860
+sudo mkswap /swapfile
+#1569422860
+sudo swapon /swapfile
+#1569422860
+mkdir /mnt/all_files
+#1569422860
+sudo mkdir /mnt/all_files
+#1569422860
+sudo gedit /etc/fstab 
+#1569422860
+sudo nano /etc/fstab 
+#1569422860
+cat /sys/fs/cgroup/memory/memory.swappiness
+#1569422860
+sudo sudo gedit /etc/sysctl.d/99-swappiness.conf
+#1569422860
+sudo sudo nano /etc/sysctl.d/99-swappiness.conf
+#1569422860
+cat /sys/fs/cgroup/memory/memory.swappiness
+#1569422860
+sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
+#1569422860
+sudo apt install i3 xinput xbacklight git maim htop gnome-mpv vlc fonts-beng ttf-mscorefonts-installer ttf-dejavu powertop tlp profile-sync-daemon p7zip p7zip-rar calibre nload gifsicle
+#1569422860
+sudo apt install fonts-firacode
+#1569422860
+fc-cache -f -v
+#1569422860
+sudo vim /etc/default/grub
+#1569422860
+sudo update-grub
+#1569422860
+psd p
+#1569422860
+nano /home/ibrahim/.config/psd/psd.conf
+#1569422860
+psd pf
+#1569422860
+psd p
+#1569422860
+cd /
+#1569422860
+ls
+#1569422860
+cd bin
+#1569422860
+ls
+#1569422860
+cd ..
+#1569422860
+ls
+#1569422860
+cd sbin
+#1569422860
+ls
+#1569422860
+export $PATH=$PATH:/sbin
+#1569422860
+export PATH=$PATH:/sbin
+#1569422860
+psd p
+#1569422860
+sudo nano /etc/sudoers
+#1569422860
+systemctl --user enable psd.service
+#1569422860
+systemctl --user start psd.service
+#1569422860
+psd p
+#1569422860
+clear
+#1569422860
+psd p
+#1569422860
+psd c
+#1569422860
+psd
+#1569422860
+psd p
+#1569422860
+clear
+#1569422860
+cd
+#1569422860
+ls
+#1569422860
+cd .config/
+#1569422860
+ls
+#1569422860
+cd gtk-3.0/
+#1569422860
+ls
+#1569422860
+ls -la
+#1569422860
+touch settings.ini
+#1569422860
+vim settings.ini 
+#1569422860
+sudo vim /etc/default/tlp
+#1569328759
+fstrim
+#1569328825
+exit
+#1569328850
+xinput
+#1569328856
+xinput list-props 11
+#1569329004
+exit
+#1569328884
+xinput set-prop 11 287 1
+#1569328895
+xinput set-prop 11 295 1
+#1569328908
+vim .config/i3/config 
+#1569329006
+exit
+#1569329200
+vim .config/i3/config
+#1569330807
+psd p
+#1569337816
+modprobe
+#1569337821
+modprobe -h
+#1569337827
+clear
+#1569338326
+flutter doctor
+#1569338345
+exit
+#1569337714
+sudo powertop
+#1569342553
+exit
+#1569337596
+htop
+#1569342558
+exit
+#1569336719
+sudo apt search anki
+#1569336744
+sudo apt install anki
+#1569336852
+psd p
+#1569336861
+psd c
+#1569336863
+psd
+#1569336890
+clear
+#1569337116
+cd /soft
+#1569337131
+ln -s /mnt/all_files/soft ~/ && ln -s /mnt/all_files/work ~/ && ln -s /mnt/all_files/others ~/
+#1569337144
+ln -s /mnt/all_files/work ~/ && ln -s /mnt/all_files/others ~/
+#1569337151
+ln -s /mnt/all_files/others ~/
+#1569337162
+sudo ln -s /mnt/all_files/soft / && sudo ln -s /mnt/all_files/work / && sudo ln -s /mnt/all_files/others /
+#1569337186
+cd /soft
+#1569337186
+ls
+#1569337202
+sudo apt install ./code_1.38.1-1568209190_amd64.deb 
+#1569337533
+fstrim
+#1569338410
+clear
+#1569341019
+egrep --color 'vmx|svm' /proc/cpuinfo | wc -l
+#1569342384
+sudo apt-get install qemu-kvm libvirt-clients qemu-utils libvirt-daemon-system
+#1569342475
+sudo adduser ibrahim libvirt
+#1569342489
+sudo adduser ibrahim libvirt-qemu
+#1569342496
+sudo update-grub
+#1569342654
+fstrim
+#1569342785
+sudo vi /etc/apt/sources.list
+#1569342937
+upd
+#1569343040
+upg
+#1569343128
+upd
+#1569343132
+upg
+#1569343136
+arm
+#1569343151
+exit
+#1569343160
+psd p
+#1569343180
+exit
+#1569385178
+upd
+#1569385206
+upg
+#1569385666
+upd
+#1569385671
+upg
+#1569385674
+arm
+#1569385686
+fstrim
+#1569386028
+exit
+#1569386037
+history
+#1569386052
+psd p
+#1569386064
+exit
+#1569403054
+apt search papirus
+#1569403152
+sudo apt install papirus-icon-theme
+#1569403671
+reboot
+#1569403770
+history
+#1569404163
+clear
+#1569404165
+exit

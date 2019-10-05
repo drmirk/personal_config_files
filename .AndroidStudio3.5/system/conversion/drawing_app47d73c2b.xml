@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="/work/all_projects/apps/drawing_app/.idea/codeStyles/Project.xml" timestamp="1567409206000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/libraries/Dart_Packages.xml" timestamp="1569004629000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/libraries/Dart_SDK.xml" timestamp="1568179288000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/libraries/Flutter_Plugins.xml" timestamp="1567409206000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/libraries/Flutter_for_Android.xml" timestamp="1567409150000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/libraries/KotlinJavaRuntime.xml" timestamp="1567409150000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/misc.xml" timestamp="1569002144000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/modules.xml" timestamp="1567409150000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/runConfigurations/main_dart.xml" timestamp="1567432624000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/vcs.xml" timestamp="1567433154000" />
+    <file path="/work/all_projects/apps/drawing_app/.idea/workspace.xml" timestamp="1569423898000" />
+    <file path="/work/all_projects/apps/drawing_app/android/drawing_app_android.iml" timestamp="1567409206000" />
+    <file path="/work/all_projects/apps/drawing_app/drawing_app.iml" timestamp="1567409150000" />
+  </project-files>
+</conversion>
+

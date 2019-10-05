@@ -7,7 +7,7 @@
 	// },
 	{
 		"key": "ctrl+b",
-		"command": "workbench.action.toggleActivityBarVisibility"
+		"command": "workbench.action.toggleSidebarVisibility"
 	},
 	{
 		"key": "ctrl+j",
@@ -19,7 +19,15 @@
 		"command": "-workbench.action.toggleSidebarVisibility"
 	},
 	{
+		"key": "ctrl+j",
+		"command": "workbench.action.togglePanel"
+	},
+	{
 		"key": "alt+b",
-		"command": "workbench.action.toggleSidebarVisibility"
+		"command": "workbench.action.toggleActivityBarVisibility"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-workbench.action.togglePanel"
 	}
 ]

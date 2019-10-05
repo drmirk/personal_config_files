@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/mnt/all_files/soft/Android/Sdk/emulator/emulator -avd Pixel_2_XL_API_28 -no-snapshot-save -no-boot-anim -accel on -gpu host 
+Exec=/mnt/all_files/soft/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28 -no-snapshot-save -no-boot-anim -accel on -gpu host 
 Name=AVD
 GenericName=Emulator for Android development.
 Terminal=false

@@ -34,6 +34,9 @@
 
 - $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload curl gifsicle
 
+- $ sudo apt install zsh
+- $ chsh -s /bin/zsh
+
 
 - edit profile-sync-daemon
 	$ psd
@@ -75,15 +78,16 @@
 
 
 
-- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User
-- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/globalStorage/alefragnani.project-manager/projects.json /home/ibrahim/.config/Code/User/globalStorage/alefragnani.project-manager
+
+
 - ln -s /mnt/all_files/work/personal_configs/.config/i3 /home/ibrahim/.config/
 - ln -s /mnt/all_files/work/personal_configs/.config/i3status /home/ibrahim/.config/
 - ln -s /mnt/all_files/work/personal_configs/.config/pulse/daemon.conf /home/ibrahim/.config/pulse
 - ln -s /mnt/all_files/work/personal_configs/.local/share/applications/* /home/ibrahim/.local/share/applications/
-- ln -s /mnt/all_files/work/personal_configs/.bashrc /home/ibrahim
-- ln -s /mnt/all_files/work/personal_configs/.bash_aliases /home/ibrahim
-- ln -s /mnt/all_files/work/personal_configs/.gitconfig /home/ibrahim
+
+
+- ln -s /mnt/all_files/work/personal_configs/home/.bashrc /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.bash_aliases /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.gitconfig /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.flutter /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.stagehand /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.selected_editor /home/ibrahim
 
 
 - Install lastpass
@@ -140,13 +144,30 @@
 
 
 - sudo apt install gcc-7
-  sudo apt install linux-headers-4.19.0-4-amd64
+  sudo apt install linux-headers-4.19.0-5-amd64
 
 
 - Change directory to open in nautilus instead of vscode
 	$ gedit /home/ibrahim/.config/mimeapps.list
 	- Move "inode/directory=org.gnome.Nautilus.desktop;" from [Added Associations] to [Default Applications]
 
+
+- Gtk dark theme
+	- Open /home/ibrahim/.config/gtk-3.0/settings.ini
+		[Settings]
+		gtk-application-prefer-dark-theme=1
+	- Open /home/ibrahim/.config/gtk-4.0/settings.ini
+		[Settings]
+		gtk-application-prefer-dark-theme=1
+
+- Gtk icon theme
+	- sudo apt install papirus-icon-theme
+	- Open /home/ibrahim/.config/gtk-3.0/settings.ini
+		[Settings]
+		gtk-icon-theme-name = ePapirus
+	- Open /home/ibrahim/.config/gtk-4.0/settings.ini
+		[Settings]
+		gtk-icon-theme-name = ePapirus
 
 
 - install flutter
@@ -157,6 +178,11 @@
 	$ ln -s ~/Android/.android ~/
 	$ ln -s ~/Android/.gradle ~/
 	
+- configure tlp
+	$ sudo vim /etc/default/tlp
+	- TLP_DEFAULT_MODE=BAT
+	- TLP_PERSISTENT_DEFAULT=1
+	- DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
 
 - install crontab
 	$ export EDITOR=vi

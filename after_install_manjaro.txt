@@ -1,0 +1,186 @@
+- # sudo fstrim -a -v
+- # software update
+	preferences		
+		remove unrequired dependency
+		automatically download update
+		change mirrors
+		refresh mirrors
+		enable aur
+		check for updates from aur
+		cache 1
+		
+		
+- make swap file:
+	$ sudo fallocate -l 2G /swapfile
+	$ sudo chmod 600 /swapfile
+	$ sudo mkswap /swapfile
+	$ sudo swapon /swapfile
+
+
+- edit fstab
+	# sudo mkdir /mnt/all_files
+	# sudo nano /etc/fstab
+
+
+- # check swappiness property:
+	$ cat /sys/fs/cgroup/memory/memory.swappiness
+
+
+- # change swappiness:
+	$ sudo sudo gedit /etc/sysctl.d/99-swappiness.conf
+		#SET SWAPPINESS
+		vm.swappiness=0
+
+
+- Gtk dark theme
+	- Open /home/ibrahim/.config/gtk-3.0/settings.ini
+	- gtk-application-prefer-dark-theme=1
+	- Open /home/ibrahim/.config/gtk-4.0/settings.ini
+	- gtk-application-prefer-dark-theme=1
+
+- Restore Firefox Profiles
+	- Start firefox and the close it
+	- Copy RESTORE/Home/.mozilla/firefox/lx5wq4sb.default-release/* into ~/.mozilla/firefox/qdr8jpgt.default-release/* and ~/.mozilla/firefox/z48cipfb.default/*
+	- Copy RESTORE/Home/.cache/mozilla/firefox/lx5wq4sb.default-release/* into ~/.cache/mozilla/firefox/qdr8jpgt.default-release/*
+
+	
+- $ i3 xinput xbacklight git maim htop profile-sync-daemon gifsicle nload anki ttf-fira-code vim visual-studio-code-bin calibre
+
+
+- Fonts cache
+	$ fc-cache -f -v
+
+- edit profile-sync-daemon
+	$ psd
+	$ nano /home/ibrahim/.config/psd/psd.conf
+		USE_OVERLAYFS="yes"
+		BROWSERS="firefox google-chrome"
+		USE_BACKUPS="yes"
+		BACKUP_LIMIT=2
+	$ sudo nano /etc/sudoers
+		ibrahim ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+	$ systemctl --user enable psd.service
+	$ systemctl --user start psd.service
+	$ psd p
+	
+	
+- $ create file to control brightness in i3:
+	$ sudo nano /etc/X11/xorg.conf
+		Section "Device"
+		Identifier "Card0"
+		Driver "intel"
+		Option "backlight" "/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight
+		EndSection
+		
+- Edit grub menu:
+	$ sudo nano /etc/default/grub
+	$ sudo update-grub
+	
+- configure tlp
+	$ sudo vim /etc/default/tlp
+	- TLP_DEFAULT_MODE=BAT
+	- TLP_PERSISTENT_DEFAULT=1
+	
+
+- $ ln -s /mnt/all_files/soft ~/ && ln -s /mnt/all_files/work ~/ && ln -s /mnt/all_files/others ~/
+
+
+- $ sudo ln -s /mnt/all_files/soft / && sudo ln -s /mnt/all_files/work / && sudo ln -s /mnt/all_files/others /
+
+
+- ln -s /mnt/all_files/work/personal_configs/.config/i3 /home/ibrahim/.config/ && ln -s /mnt/all_files/work/personal_configs/.config/i3status /home/ibrahim/.config/ && ln -s /mnt/all_files/work/personal_configs/.config/pulse/daemon.conf /home/ibrahim/.config/pulse && ln -s /mnt/all_files/work/personal_configs/.local/share/applications/* /home/ibrahim/.local/share/applications/
+
+
+- Android Studio
+	$ ln -s /mnt/all_files/soft/Android ~/ && ln -s ~/Android/.android ~/ && ln -s ~/Android/.gradle ~/
+	$ copy Android Config Dir
+	
+
+- ln -s /mnt/all_files/work/personal_configs/home/.* .
+
+- ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/globalStorage/alefragnani.project-manager/projects.json /home/ibrahim/.config/Code/User/globalStorage/alefragnani.project-manager
+
+
+- Install notification manager
+	$ pamac install notification-daemon
+	$ sudo cp /usr/share/dbus-1/services/org.freedesktop.FileManager1.service /usr/share/dbus-1/services/org.freedesktop.Notifications.service
+	$ sudo gedit org.freedesktop.Notifications.service
+		[D-BUS Service]
+		Name=org.freedesktop.Notifications
+		Exec=/usr/lib/notification-daemon-1.0/notification-daemon
+
+
+
+
+
+
+
+
+
+
+
+	
+- $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
+
+
+
+gnome-mpv vlc fonts-beng  ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools  calibre 
+
+- $ sudo apt install zsh
+- $ chsh -s /bin/zsh
+
+
+- Check System Health
+	$ sudo systemctl --failed
+	
+- Check Error in Log File
+	$ sudo journalctl -p 3 -xb
+	
+- Remove apps:
+	sudo pacman -Rs empathy evolution freeoffice gthumb hexchat 
+	
+
+- Upgrade whole system
+	# pacman -Syu
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Apply network tweaks:
+/etc >>> cat /etc/sysctl.d/99-sysctl.conf
+
+net.core.netdev_max_backlog = 16384
+net.core.optmem_max = 65536
+net.core.somaxconn = 16384
+net.core.rmem_default = 1048576
+net.core.wmem_default = 1048576
+net.core.rmem_max = 16777216
+net.core.wmem_max = 16777216
+net.ipv4.tcp_mem = 65536 131072 262144
+net.ipv4.udp_mem = 65536 131072 262144
+net.ipv4.tcp_rmem = 8192 87380 16777216
+net.ipv4.tcp_wmem = 8192 65536 16777216
+net.ipv4.udp_rmem_min = 16384
+net.ipv4.udp_wmem_min = 16384
+net.ipv4.tcp_fastopen = 3
+net.ipv4.tcp_max_orphans = 65536
+net.ipv4.tcp_max_syn_backlog = 65536
+net.ipv4.tcp_max_tw_buckets = 65536
+net.ipv4.tcp_slow_start_after_idle = 0
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_fin_timeout = 15
+net.ipv4.tcp_keepalive_time = 300
+net.ipv4.tcp_keepalive_intvl = 15
+net.ipv4.tcp_keepalive_probes = 6
+net.ipv4.tcp_mtu_probing = 1
+net.ipv4.tcp_timestamps = 0
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_rfc1337 = 1
+
+
+

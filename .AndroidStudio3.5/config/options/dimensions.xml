@@ -1,0 +1,36 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="1047" y="700" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="815" y="10" />
+    <location key="SettingsEditor.0.0.1920.1080" x="710" y="77" />
+    <location key="search.everywhere.popup.0.0.1920.1080" x="1103" y="234" />
+    <location key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.0.0.1920.1080" x="1115" y="196" />
+    <location key="IDE.errors.dialog.0.0.1920.1080" x="1017" y="213" />
+    <location key="find.popup.0.0.1920.1080" x="1089" y="206" />
+    <location key="run.anything.popup.0.0.1920.1080" x="1102" y="245" />
+    <location key="GradleDaemons.0.0.1920.1080" x="976" y="111" />
+    <location key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" x="1155" y="352" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080" x="1181" y="380" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" x="1158" y="287" />
+    <location key="Registry.0.0.1920.1080" x="640" y="140" />
+    <location key="ProcessPopupWindow.0.0.1920.1080" x="980" y="846" />
+    <location key="#Updates.0.0.1920.1080" x="1026" y="133" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="428" height="474" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1208" height="870" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="956" height="196" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="956" height="196" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="956" height="196" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="956" height="196" />
+    <size key="search.everywhere.popup.0.0.1920.1080" width="672" height="678" />
+    <size key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.0.0.1920.1080" width="628" height="531" />
+    <size key="IDE.errors.dialog.0.0.1920.1080" width="834" height="533" />
+    <size key="find.popup.0.0.1920.1080" width="701" height="648" />
+    <size key="GradleDaemons.0.0.1920.1080" width="905" height="710" />
+    <size key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" width="560" height="310" />
+    <size key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" width="544" height="395" />
+    <size key="Registry.0.0.1920.1080" width="1024" height="667" />
+    <size key="ProcessPopupWindow.0.0.1920.1080" width="400" height="135" />
+    <size key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080" width="504" height="219" />
+    <size key="#Updates.0.0.1920.1080" width="804" height="667" />
+  </component>
+</application>

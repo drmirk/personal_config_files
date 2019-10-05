@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="/work/all_projects/accelerate_reading/.idea/accelerate_reading.iml" timestamp="1570015117000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/codeStyles/Project.xml" timestamp="1564909642000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/encodings.xml" timestamp="1565620587000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/libraries/Dart_Packages.xml" timestamp="1570015118000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/libraries/Dart_SDK.xml" timestamp="1569992219000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/libraries/Flutter_Plugins.xml" timestamp="1570015118000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/misc.xml" timestamp="1564928545000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/modules.xml" timestamp="1564909642000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/vcs.xml" timestamp="1564909642000" />
+    <file path="/work/all_projects/accelerate_reading/.idea/workspace.xml" timestamp="1570026411000" />
+  </project-files>
+</conversion>
+

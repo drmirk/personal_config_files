@@ -1,0 +1,27 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="compactDropdowns" value="true" />
+    <option name="highlightColorEnabled" value="true" />
+    <option name="isCompactMenus" value="true" />
+    <option name="isCompactStatusBar" value="true" />
+    <option name="isCompactTables" value="true" />
+    <option name="isContrastMode" value="true" />
+    <option name="isHighContrast" value="true" />
+    <option name="isWizardShown" value="true" />
+    <option name="overrideAccentColor" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="statusBarTheme" value="false" />
+    <option name="themedScrollbars" value="false" />
+    <option name="tabOpacity" value="100" />
+    <option name="highlightThickness" value="4" />
+    <option name="rightTreeIndent" value="6" />
+    <option name="settingsSelectedTab" value="6" />
+    <option name="tabsHeight" value="18" />
+    <option name="accentColor" value="84ffff" />
+    <option name="highlightColor" value="feffff" />
+    <option name="selectedTheme" value="CUSTOM" />
+    <option name="userId" value="5d472920:16c4d4d470d:-8000" />
+    <option name="version" value="3.10.0" />
+    <option name="tabHighlightPosition" value="Full" />
+  </component>
+</application>

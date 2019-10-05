@@ -1,3 +1,4 @@
+
 # i3 config file (v4)
 
 
@@ -194,8 +195,9 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad, tap to click, natural scrolling
-exec xinput set-prop 11 287 1
-exec xinput set-prop 11 295 1
+exec xinput set-prop 10 287 1
+exec xinput set-prop 10 295 1
+# exec xinput set-prop 11 315 0.5
 
 # Return to previous workspace
 workspace_auto_back_and_forth yes
@@ -205,16 +207,21 @@ workspace_auto_back_and_forth yes
 exec xset b off
 
 # Set background color
-exec xsetroot -solid "#333333"
+exec xsetroot -solid "#000000"
 
 # Open File Manager
 bindsym --release $mod+q exec --no-startup-id nautilus -w
 
 # Open Google Chrome
-bindsym --release $mod+shift+z exec google-chrome
+bindsym --release $mod+shift+z exec /mnt/all_files/soft/firefox/firefox
 
 # Open VS Code
-bindsym --release $mod+shift+c exec /usr/share/code/code
+# bindsym --release $mod+shift+c exec /usr/share/code/code
+
+# Open Android Studio
+bindsym --release $mod+shift+c exec /mnt/all_files/soft/Android/android-studio/bin/studio.sh
+
 
 # Show battery and audio notification
 bindsym $mod+m exec /mnt/all_files/work/personal_configs/status_notification.sh
+

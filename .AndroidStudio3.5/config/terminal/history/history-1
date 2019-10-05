@@ -1,0 +1,312 @@
+#1568410806
+su
+#1568410806
+exit
+#1568410806
+psd
+#1568410806
+nano /home/ibrahim/.config/psd/psd.conf
+#1568410806
+psd p
+#1568410806
+systemctl --user enable psd.service
+#1568410806
+systemctl --user start psd.service
+#1568410806
+psd p
+#1568410806
+fc-cache -f -v
+#1568410806
+n -s /mnt/all_files/work/personal_configs/.config/i3 /home/ibrahim/.config/
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/.config/i3 /home/ibrahim/.config/
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/.config/i3status /home/ibrahim/.config/
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/.config/pulse/daemon.conf /home/ibrahim/.config/pulse
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/.local/share/applications/* /home/ibrahim/.local/share/applications/
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/home/.bashrc /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.bash_aliases /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.gitconfig /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.flutter /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.stagehand /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.selected_editor /home/ibrahim
+#1568410806
+rm .bashrc 
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/home/.bashrc /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.bash_aliases /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.gitconfig /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.flutter /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.stagehand /home/ibrahim && ln -s /mnt/all_files/work/personal_configs/home/.selected_editor /home/ibrahim
+#1568410806
+ln -s /mnt/all_files/soft ~/ && ln -s /mnt/all_files/work ~/ && ln -s /mnt/all_files/others ~/
+#1568410806
+ln -s /mnt/all_files/work/personal_configs/.config/Code/User/keybindings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/settings.json /home/ibrahim/.config/Code/User && ln -s /mnt/all_files/work/personal_configs/.config/Code/User/globalStorage/alefragnani.project-manager/projects.json /home/ibrahim/.config/Code/User/globalStorage/alefragnani.project-manager
+#1568410806
+ln -s /mnt/all_files/soft/Android ~/
+#1568410806
+ln -s ~/Android/.android ~/
+#1568410806
+ln -s ~/Android/.gradle ~/
+#1568410806
+exit
+#1568150399
+apt update
+#1568150407
+upd
+#1568150414
+upg
+#1568150422
+sudo apt full-upgrade 
+#1568150429
+arm
+#1568150439
+sudo apt dist-upgrade 
+#1568150636
+sudo vim /etc/apt/sources.list
+#1568150661
+upd
+#1568150683
+fstrim
+#1568150694
+sudo vim /etc/apt/sources.list
+#1568150735
+upd
+#1568150770
+upg
+#1568150793
+sudo vim /etc/apt/sources.list
+#1568150835
+uname -a
+#1568150894
+upd
+#1568150909
+exit
+#1568152620
+psd p
+#1568152622
+exit
+#1568150924
+upd
+#1568150933
+upg
+#1568151936
+upd
+#1568151949
+upg
+#1568151956
+sudo apt full-upgrade 
+#1568152373
+upd
+#1568152378
+upg
+#1568152382
+sudo apt full-upgrade 
+#1568152387
+fstrim
+#1568152498
+sudo vim /etc/apt/sources.list
+#1568152559
+upd
+#1568152597
+upg
+#1568153251
+upd
+#1568153254
+upg
+#1568153259
+sudo apt full-upgrade 
+#1568153338
+upd
+#1568153341
+upg
+#1568153343
+sudo apt full-upgrade 
+#1568153346
+arm
+#1568153378
+fstrim
+#1568149550
+xinput list-props
+#1568149555
+xinput
+#1568149560
+xinput list-props 11
+#1568149579
+xinput set-prop 11 273 1
+#1568149661
+psd p
+#1568149676
+fstrim
+#1568149961
+psd p
+#1568150984
+cat /proc/sys/vm/swappiness
+#1568174146
+psd p
+#1568174165
+fstrim
+#1568174223
+sudo vim /etc/default/tlp
+#1568174265
+sudo tlp start
+#1568174285
+fstrim
+#1568177177
+sudo make install
+#1568177195
+upd
+#1568177202
+upg
+#1568177207
+arm
+#1568177210
+fstrim
+#1568177259
+exit
+#1568177527
+sudo apt-get install lib32stdc++6
+#1568177542
+fstrim
+#1568178275
+exit
+#1568180059
+psd p
+#1568180064
+psd c
+#1568180069
+psd p
+#1568180580
+psd c
+#1568180585
+exit
+#1568202577
+upd
+#1568202589
+upg
+#1568202591
+arm
+#1568202594
+fstrim
+#1568202656
+exit
+#1568210051
+scrcpy
+#1568210053
+exit
+#1568210048
+scrcpy
+#1568210055
+exit
+#1568210169
+./scrcpy 
+#1568210301
+exit
+#1568209225
+sudo snap install okular
+#1568209236
+sudo apt install snapd
+#1568209276
+sudo snap install okular
+#1568209742
+sudo snap list
+#1568209755
+sudo snap install scrcpy
+#1568209980
+sudo snap list
+#1568209983
+scrcpy
+#1568210075
+which scrcpy
+#1568210192
+sudo apt search libavformat.so.57
+#1568210213
+sudo apt search libavformat
+#1568210240
+upd
+#1568210246
+upg
+#1568210362
+nmtui
+#1568210385
+sudo snap list
+#1568210392
+sudo snap remove scrcpy
+#1568210399
+sudo snap list
+#1568210417
+sudo snap --help
+#1568210425
+man snap
+#1568210488
+sudo snap delete scrcpy
+#1568210500
+sudo snap remove scrcpy
+#1568210639
+upd
+#1568210642
+arm
+#1568210646
+fstrim
+#1568210655
+exit
+#1568312312
+upd
+#1568312350
+upg
+#1568312660
+upd
+#1568312663
+upg
+#1568312667
+arm
+#1568312672
+fstrim
+#1568312700
+exit
+#1568353923
+upd
+#1568353952
+upg
+#1568353955
+arm
+#1568353960
+fstrim
+#1568354055
+exit
+#1568387255
+sudo pkill -u ibrahim
+#1568387932
+sudo apt update
+#1568387941
+fstrim
+#1568387953
+sudo reboot
+#1568388835
+nmtui
+#1568388928
+fstrim
+#1568388953
+exit
+#1568408930
+upd
+#1568408944
+fstrim
+#1568408963
+exit
+#1568410453
+ls -la .flutter 
+#1568410463
+cat .flutter 
+#1568410473
+vim .flutter 
+#1568410493
+flutter config
+#1568410508
+flutter doctor
+#1568410565
+less .bashrc 
+#1568410605
+which flutter
+#1568410616
+flutter --help
+#1568410637
+cd /home/ibrahim/Android/flutter-stable/bin/
+#1568410646
+./flutter doctor
+#1568410810
+flutter doctor

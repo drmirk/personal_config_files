@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Hacker News",
+		"rootPath": "/mnt/all_files/work/all_projects/hacker_news",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Flutter Learning",
+		"rootPath": "/mnt/all_files/work/learning/flutter_learning",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Dart Learning",
+		"rootPath": "/mnt/all_files/work/learning/other_learning/dart/first",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Accelerate Reading",
+		"rootPath": "/mnt/all_files/work/all_projects/accelerate_reading",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "Flutter Game",
+		"rootPath": "/mnt/all_files/work/learning/flutter_game",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	}
+]

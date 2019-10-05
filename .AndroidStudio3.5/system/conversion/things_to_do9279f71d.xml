@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="/work/all_projects/things_to_do/.idea/codeStyles/Project.xml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/.idea/libraries/Dart_Packages.xml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/.idea/libraries/Dart_SDK.xml" timestamp="1569695890000" />
+    <file path="/work/all_projects/things_to_do/.idea/libraries/Flutter_Plugins.xml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/.idea/libraries/Flutter_for_Android.xml" timestamp="1569695890000" />
+    <file path="/work/all_projects/things_to_do/.idea/libraries/KotlinJavaRuntime.xml" timestamp="1569695890000" />
+    <file path="/work/all_projects/things_to_do/.idea/misc.xml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/.idea/modules.xml" timestamp="1569695890000" />
+    <file path="/work/all_projects/things_to_do/.idea/runConfigurations/main_dart.xml" timestamp="1569696331000" />
+    <file path="/work/all_projects/things_to_do/.idea/vcs.xml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/.idea/workspace.xml" timestamp="1570263152000" />
+    <file path="/work/all_projects/things_to_do/android/things_to_do_android.iml" timestamp="1569696332000" />
+    <file path="/work/all_projects/things_to_do/things_to_do.iml" timestamp="1569695890000" />
+  </project-files>
+</conversion>
+

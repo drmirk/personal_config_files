@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+	name = 'Ibrahim Rasel'
+	email = 'md.ibrahim.rasel@gmail.com'
+[color]
+	ui = true
+[core]
+	autocrlf = input
+	quotepath = false
+[alias]
+	s = status -s
+	lg = log --oneline --all --graph --decorate
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

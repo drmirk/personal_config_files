@@ -128,10 +128,10 @@ export PATH=$PATH:/sbin/
 export EDITOR=vim
 
 # add flutter path
-# export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin
-# export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin/cache/dart-sdk/bin
-export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin
-export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin/cache/dart-sdk/bin
+# export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin
+# export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk/bin
 
 
 # add android path
@@ -140,3 +140,9 @@ export PATH=$PATH:/home/ibrahim/Android/android-studio/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# add processing
+export PATH=$PATH:/mnt/all_files/soft/processing
+
+# dotnet telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=1

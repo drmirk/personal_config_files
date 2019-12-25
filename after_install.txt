@@ -34,6 +34,11 @@
 
 - $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload curl gifsicle
 
+- For Unity
+	$ sudo apt install libgtk2.0-0
+	- Install Mono for Unity Development:
+		https://www.mono-project.com/download/stable/#download-lin-debian
+
 - $ sudo apt install zsh
 - $ chsh -s /bin/zsh
 
@@ -177,7 +182,7 @@
 	$ ln -s /mnt/all_files/soft/Android ~/
 	$ ln -s ~/Android/.android ~/
 	$ ln -s ~/Android/.gradle ~/
-	
+
 - configure tlp
 	$ sudo vim /etc/default/tlp
 	- TLP_DEFAULT_MODE=BAT

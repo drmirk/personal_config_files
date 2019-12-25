@@ -193,3 +193,10 @@
 	$ export EDITOR=vi
 	$ crontab -e
 	$ */15 * * * * /mnt/all_files/work/personal_configs/status_notification.sh
+
+- Import Android Studio & Rider
+	- Start app
+	- Choose zip file to restore from
+	- After startup, in Android Studio -> Plugin -> Material Theme UI, Dart, Flutter
+	- After startup, in Rider -> Plugin -> Material Theme UI
+	- Import from zip again

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Godot
+Exec="/mnt/all_files/soft/Godot/Godot_v3.1.1-stable_x11.64" %f
+Icon=/mnt/all_files/soft/Godot/icon.png
+Comment=A cross-platform game engine
+Categories=Development;IDE;
+Terminal=false

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Exec=/mnt/all_files/soft/Android/android-studio/bin/studio.sh
+Icon=/mnt/all_files/soft/Android/android-studio/bin/studio.png
 Name=Android Studio
 GenericName=The IDE of choice for Android development.
 Terminal=false

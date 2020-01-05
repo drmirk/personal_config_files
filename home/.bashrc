@@ -128,10 +128,10 @@ export PATH=$PATH:/sbin/
 export EDITOR=vim
 
 # add flutter path
-export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin
-export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin/cache/dart-sdk/bin
-# export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin
-# export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk/bin
+#export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin
+#export PATH=$PATH:/home/ibrahim/Android/flutter-stable/bin/cache/dart-sdk/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin
+export PATH=$PATH:/home/ibrahim/Android/flutter-beta/bin/cache/dart-sdk/bin
 
 
 # add android path

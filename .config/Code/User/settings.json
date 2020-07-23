@@ -68,7 +68,7 @@
   // "vim.startInInsertMode": true,
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "activityBar.background": "#0b1015",
     "editor.background": "#000000",
@@ -175,5 +175,7 @@
   "fileutils.delete.useTrash": true,
   "workbench.tree.renderIndentGuides": "none",
   "terminal.integrated.rendererType": "dom",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "dictCompletion.leastNumOfChars": 1,
+  "dart.flutterAndroidX": true
 }

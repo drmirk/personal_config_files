@@ -32,7 +32,12 @@
 
 - $ sudo apt install intel-microcode firmware-amd-graphics firmware-iwlwifi firmware-misc-nonfree
 
-- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload curl gifsicle
+- $ sudo apt install i3 xinput xbacklight git maim htop build-essential gnome-mpv vlc fonts-beng clang clang-format gdb ipython3 ttf-mscorefonts-installer ttf-dejavu powertop tlp smartmontools profile-sync-daemon p7zip p7zip-rar calibre valgrind libboost-all-dev nload curl gifsicle arandr
+
+
+- Install youtube-dl
+	$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+	$ sudo chmod a+rx /usr/local/bin/youtube-dl
 
 - For Unity
 	$ sudo apt install libgtk2.0-0

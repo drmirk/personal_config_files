@@ -1,0 +1,99 @@
+- Remove noise
+- Normalize
+- Remove noise
+- Single band Compressor 12db, 4:1
+- Parametric Equalizer
+- Normalize
+-----------------------------------------------------------------
+- Parametric Equalizer:
+    Presets -> Loudness Maximizer (Adds some extra bass, and some treble)
+- Normalize
+    -6.00
+    95.8, 98.8
+- Dynamic Processing:
+    1   2.03:1    Compressor     Above: -20:27
+    2   1.13:1    Expander       Below: -20:27
+- Normalize
+    95.8, 98.8
+
+-------------------------------------------------------------------
+- Normalize: Plain and simple, just increases the volume. The highest peak of the audio will reach the given value. But all the audio will be raised up based on that highest point.
+- Single-band Compressor: Say audio has some high points. Set the Threshold to a certain db, so all the points above that db will be affected. Ratio is how much the audio is going to be compressed. So, if ratio is 3.0:1; means, for every 3 db input, 1 db will output. The louder it gets, the more that point will be compressed. This will make all the points at same size.
+- Hard Limiter: Cut all the points above Maximum Amplitude. Say a gardener is cutting all the leaves above a certain point. This is to remove some unwanted noises.
+
+
+--------------------------------------------------------------------
+
+- Set GPU
+
+- Deliver:
+    Tick Force sizing to highest quality
+    Tick Force debayer to highest quality
+
+- Optimize Media:
+    - Set Fast Scratch Disk
+    - Master Settings -> Working Folders
+        -> point cache & gallery still location to Scratch Disk
+
+    - If shooting in HDR -> ProRes4444 OR DNxHR 444
+    - If shooting in SDR -> ProRes422LT OR DNxHR SD
+    - Master Settings -> Optimized Media and Render Cache
+        -> Media Resolution -> Automatically
+        -> Media Format -> DNxHR SD
+        -> Cache Format -> DNxHR SD
+        -> Background cache 1 second
+        -> Tick all boxes
+
+    - Playback Menu -> Use Optimized Media if Available
+
+    - Create Smart Bin (auto creates bin based on condition):
+        Match -> All
+        MediaPool Properties -> Optimized Media -> is -> None
+        MediaPool Properties -> Video Codec -> does not contain -> ProRes422LT
+        (Will create a bin, with all the files which needs to be optimized)
+
+    - Deliver -> Advanced
+        -> Tick Use optimized media when working.
+        -> Untick when final render.
+
+    - After production delete optimized media.
+
+- Render Cache:
+    - Heavy effect (color, fusion) files will be rendered earlier. So, when playing, playback those files.
+
+    - Playback -> Render Cache -> Smart (saves personal time)
+
+    - Deliver -> Advanced
+        -> Tick Use render cached images when working.
+        -> Untick when final render.
+
+    - After production delete render cache.
+
+- Proxy Mode:
+    - Playback -> Proxy Mode
+        -> None (when fusion/color).
+        -> Half/Quarter Resolution (only when cutting/editing).
+
+- Timeline Resolution:
+    - Master Settings -> Timeline Format
+        -> Timeline Resolution -> reduce when working
+
+
+- Video Monitoring:
+    - Master Settings -> Video Monitoring
+        -> Video bit depth: 8 when cut OR edit
+
+- Fusion Proxy & Auto Proxy:
+    - Fusion Page -> Right Click beside play buttons
+        -> Proxy (enable, so what gets rendered is less resolution, so out of all the pixels, only renders x no of pixels)
+        -> Auto Proxy (same as proxy, but only works when controlling a parameter, so when applying effect, process less resolution; say i know what blur does, so this will show only the amount of blur. but say I don't know what a particular effect does, then don't use it)
+    - Fusion Settings -> General -> Proxy
+        -> Standard -> Ratio 3:1 means for every 3 pixel render only 1 pixel
+        - Enable "Auto"
+
+- Fusion Cache To Disk:
+    - If some effect is very large and some nodes are finished. Then we can right click and prerender those finished nodes or up until some node. So, when we connect those nodes to other nodes, those prerendered videos will be used.
+
+- Fusion render specific area:
+    - In whole frame, select specific area:
+        -> From monitor, set specific area, now only this portion will be rendered.

@@ -1,0 +1,27 @@
+cmd /c mklink /d "C:\Users\ibrahim\.android" "D:\soft\Android\.android"
+
+cmd /c mklink /d "C:\Users\ibrahim\.gradle" "D:\soft\Android\.gradle"
+
+Active Mouse Focus from Control Panel -> Ease of Access
+Change focus speed:
+HKEY_CURRENT_USER\Control Panel\Desktop -> "UserPreferencesMask" -> Decimal -> <50
+
+Start AutoHotKey script with windows
+%appdata%\Microsoft\Windows\Start Menu\Programs\Startup
+Create Shortcut -> Locate Script
+
+
+# Allow postgresql in the private network
+- Allow psql.exe first
+- C:\Program Files\PostgreSQL\9.5\data\postgresql.conf -> PORT
+- Windows Defender Firewall -> Advanced Settings -> Inbound Rules -> New Rule -> Port -> TCP, LOCAL -> Private (based on connection) -> Allow Connection
+
+
+# Disable telemetry
+- gpedit
+- local group policy -> computer config -> admin template -> windows component -> data collection & preview -> allow telemetry -> enabled, 0
+
+
+# Disable drive update
+- gpedit
+- local group policy -> computer config -> admin template -> windows component -> windows update -> do not include drivers with windows updates -> enabled

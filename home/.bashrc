@@ -141,8 +141,5 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# add processing
-export PATH=$PATH:/mnt/all_files/soft/processing
-
 # dotnet telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1

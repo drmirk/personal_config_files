@@ -10,6 +10,11 @@ alias pngresize='function _pngresize(){ convert -resize 360x720 $1 $(date +"%Y-%
 alias allstatus='function _battery(){ zenity --notification --text "Status:\nBattery: $(cat /sys/class/power_supply/BAT1/uevent | grep 'POWER_SUPPLY_CAPACITY=' | cut -d '=' -f2-)% \nAudio: $(amixer sget Master | grep 'Right:' | cut -d '[' -f2- | cut -d '[' -f2 | cut -d ']' -f1) - $(amixer sget Master | grep 'Right:' | cut -d '[' -f2- | cut -d ']' -f1) \nIP: $(curl ifconfig.me) \nTime: $(date +"%I:%M") ";}; _battery'
 alias flutters='/home/ibrahim/Android/flutter-stable/bin/flutter'
 alias flutterb='/home/ibrahim/Android/flutter-beta/bin/flutter'
+alias vpn='sudo protonvpn connect US-FREE#2 -p udp'
+alias vpnc='sudo protonvpn connect'
+alias vpnx='sudo protonvpn disconnect'
+alias vpns='protonvpn status'
+alias hivegenerate='flutter packages pub run build_runner build'
 
 
 
